@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For IE9 and later -->
+    <!--[if lte IE 9]>
+   		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <!-- For IE10 and more -->
+    <![if IE]><![endif]>
+</head>
+<body>
+   <!-- BEGIN registration  -->
+   <div class="registration">
+       <form action="#">
+       	<fieldset class="account-info">
+       		<label>
+       			Name
+       			<input type="text" placeholder="Full name" required>
+       		</label>
+       		<label>
+       			Email
+       			<input type="email" placeholder="Email address" required>
+       		</label>
+            <label>
+                Number of passes
+             	<select name="passes">
+             		<option value="1" selected>1</option>
+             		<option value="2">2</option>
+             		<option value="3">3</option>
+             		<option value="4">4</option>
+             	</select>
+            </label>
+            <label>
+                Comments
+       		   <textarea name="comments" cols="30" rows="5"></textarea>
+            </label>
+       	</fieldset>
+       	<button class="btn" type="submit" name="submit">Purchase</button>
+       </form>
+   </div>
+   <!-- END registration -->
+</body>
+</html>
